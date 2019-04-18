@@ -1,26 +1,16 @@
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD033 -->
 
-# tris-webpack-boilerplate
+# Magna-Carta
 
-[![Build Status](https://travis-ci.com/tr1s/tris-webpack-boilerplate.svg?branch=master)](https://travis-ci.com/tr1s/tris-webpack-boilerplate)
-[![Dependencies Status](https://img.shields.io/david/tr1s/tris-webpack-boilerplate.svg)](https://github.com/tr1s/tris-webpack-boilerplate)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/tr1s/tris-webpack-boilerplate.svg)](https://github.com/tr1s/tris-webpack-boilerplate)
-[![Twitter Badge](https://img.shields.io/badge/chat-twitter-blue.svg)](https://twitter.com/triscodes)
-![License Badge](https://img.shields.io/github/license/tr1s/tris-webpack-boilerplate.svg)
-[![Donate Badge](https://img.shields.io/badge/buy%20me%20a%20tea-donate-yellow.svg)](https://paypal.me/Nightizm)
+[![Build Status](https://travis-ci.com/rossi/teepee.png?branch=master)](https://travis-ci.com/rossi/magna-carta)
+[![Dependencies Status](https://img.shields.io/rossi/rossi/teepee.png)](https://github.com/CorradoRossi/magna-carta)
+[![Dev Dependencies Status](https://img.shields.io/rossi/dev/CorradoRossi/teepee.png)](https://github.com/CorradoRossi/magna-carta)
+[![Twitter Badge](https://img.shields.io/badge/chat-twitter-blue.svg)](https://twitter.com/Moto__Rossi)
+![License Badge](https://img.shields.io/github/license/rossi/teepee.png)
+[![Donate Badge](https://img.shields.io/badge/buy%20me%20a%20tea-donate-yellow.svg)](https://paypal.me/rossimeacham)
 
 ![Google Lighthouse Report](https://imgur.com/lqhTYxk.jpg)
-
-__This webpack boilerplate is for beginner, intermediate, and advanced developers looking to create static websites quickly while acheiving all the right optimizations to score perfect on [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/) and [Google Lighthouse Reports](https://developers.google.com/web/tools/lighthouse/)__ — This is an evolution of [tris-gulp-boilerplate](https://github.com/tr1s/tris-gulp-boilerplate), now with Webpack 4. Webpack is the new standard for bundling JS which [Gulp](https://gulpjs.com/) wasn't capable of. Thankfully Webpack can both run tasks and bundle js 💪
-
-The goal of this project/boilerplate is to reach the following people:
-
-1. __The beginners__ 👶 — who although use Gulp/Webpack/Node/Npm still need more thorough explainations than the more acquainted developers. They want things to work, but they want to know _how_ and _why_ as well.
-2. __The side-project hustlers__ 🏃‍♀️ — those with all the great ideas but don't want to waste time with setup. They need to get their ideas, apps, and websites out and into the browser... _fast_.
-3. __The obsessive compulsive__ 🕵️‍♂️ — people who love getting those perfect scores on performance and optimizaitons reports. People who are digitally organized and pride themselves knowing that all their files are minimized, compressed, zipped, and ready to ship!
-
-Feel free to fork this repo and create your own workflow based off this template! Everyone's a little different, I understand.
 
 ___
 
@@ -28,7 +18,7 @@ ___
 
 You need [git](https://git-scm.com/) and [node.js](https://nodejs.org/) on your computer before running.
 
-1. `git clone https://github.com/tr1s/tris-webpack-boilerplate.git your-project-name`
+1. `git clone https://github.com/CorradoRossi/magna-carta.git your-project-name`
 2. `cd your-project-name && rm -rf .git`
 3. `npm install`
 4. `npm start`
@@ -165,13 +155,13 @@ const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 
 plugins: [
   new HtmlWebpackPlugin({
-    title: 'tris-webpack-boilerplate',
+    title: 'magna-carta',
     filename: 'index.html',
     template: './src/index.html',
     inject: 'head'
   }),
   new HtmlWebpackPlugin({
-    title: 'tris-404-page',
+    title: 'magna-404-page',
     filename: '404.html',
     template: './src/404.html',
     inject: 'head'
@@ -506,7 +496,7 @@ ___
 
 ### Favicon generation
 
-This is a great plugin that generates every single icon you'll ever need based off one image source. In my `src/images/` folder I have a `tris-package.svg` that I input into the [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin).
+This is a great plugin that generates every single icon you'll ever need based off one image source. In my `src/images/` folder I have a `teepee.png` that I input into the [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin).
 
 It will generate icons for apple, android, chrome, firefox, twitter, windows, you name it. It will generate each icon in all different sizes and import them directly into your website head where they belong. Twitter and windows are set to false but default, so I changed them to true just to cover all the bases just in-case.
 
@@ -521,7 +511,7 @@ module.exports = merge(common, {
   mode: 'production',
   plugins: [
     new FaviconsWebpackPlugin({
-      logo: './src/images/tris-package.svg',
+      logo: './src/images/teepee.png',
       icons: {
         twitter: true,
         windows: true
@@ -601,4 +591,4 @@ I try my best to explain things thoroughly, but if something can be explained mo
 
 ___
 
-Hope this helped! Follow me on [twitter](https://twitter.com/triscodes) if you're into that. 🌱
+Hope this helped! Follow me on [twitter](https://twitter.com/Moto__Rossi) if you're into that. 🌱
