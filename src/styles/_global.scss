@@ -25,7 +25,7 @@ html {
 // 2. For now, this is `!important` because the `::selection` (below) affects
 //    the background color in IE.
 body {
-    background-color: #f2f2f2 !important; // [2]
+    background-color: #f2f2f2; // [2]
     color: $text-color;
     line-height: $line-height--base;
     margin: 0;
@@ -50,4 +50,12 @@ img::selection {
 }
 img::-moz-selection {
     background: transparent;
+}
+
+.cc {
+    color: #212D50 !important;
+}
+
+.asana {
+    color: #212D50;
 }
